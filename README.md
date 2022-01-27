@@ -1,0 +1,4 @@
+- 问题
+  - 报错：Table 'database.hibernate_sequence' doesn't exist
+    - Entity 原来这么写 @GeneratedValue(strategy = GenerationType.AUTO) 改成 @GeneratedValue(strategy = GenerationType.IDENTITY) 即可，说是要明确指定主键的自增方案
+  - 
