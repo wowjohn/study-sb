@@ -1,4 +1,4 @@
 - 问题
   - 报错：Table 'database.hibernate_sequence' doesn't exist
     - Entity 原来这么写 @GeneratedValue(strategy = GenerationType.AUTO) 改成 @GeneratedValue(strategy = GenerationType.IDENTITY) 即可，说是要明确指定主键的自增方案
-  - 
+  - AtomicLong 的作用是对长整型进行原子操作，在32位操作系统中，64位的long 和 double 变量由于会被JVM当作两个分离的32位来进行操作，所以不具有原子性。而使用AtomicLong能让long的操作保持原子型。
